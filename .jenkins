@@ -1,1 +1,29 @@
-This file is used as a marker for the test harness to discover the root directory of Jenkins.
+pipeline {
+    agent any
+
+    stages {
+        stage('test') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+    stages {
+        stage('build') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+
+    stages {
+        stage('deploy') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+
+
+
+}
